@@ -1,46 +1,58 @@
-* {
-  /* box-sizing: border-box; */
-}
-
-:focus {
- /* TODO */
-}
 
 body {
-  /* TODO */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(#e66465, #9198e5);
 }
 
 input {
- /* TODO */
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.search-container {
- /* TODO */
-}
 .search-container input,
 .search-container .suggestions {
-  /* TODO */
+  background: lightpink
 }
 .search-container input {
- /* TODO */
+    padding: 10px;
+    font-size: 16px;
+    border:#9198e5;
+    width: 300px;
+    border-color: lightpink;
+
+
 }
 .search-container .suggestions {
-   /* TODO */
+  position: absolute;
+  width: 318px;
+  max-height: 200px;
+  overflow-y: hidden;
+  border: 1px solid lightpink;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-  /* TODO */
-}
+  margin: 0;
+  padding: 0;
+  }
 ul.has-suggestions {
-  /* TODO */
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 ul li {
-  /* TODO */
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
 }
-ul li:hover {
-  /* TODO */
+.suggestions ul li.hover {
+  background-color: #e66465;
+  cursor: pointer;
 }
 
-input {
-   /* TODO */
-}
